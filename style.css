@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Bellota:wght@300;400;700&family=Monoton&family=Montserrat:wght@200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  background-color: whitesmoke;
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5rem;
+  color: lightgrey;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loader img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: contain;
+}
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* flex-direction: column; */
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.image_container .img {
+  width: 100%;
+  height: 60vh;
+  object-fit: contain;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+/* Media quaries  */
+@media screen and (min-width: 1000px) {
+  .image_container img {
+    width: 60rem;
+  }
+}
